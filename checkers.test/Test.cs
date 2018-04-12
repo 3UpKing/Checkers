@@ -1,9 +1,10 @@
 ﻿using System;
+using NUnit.Framework;
+using System.Linq; 
 
 namespace checkers.test
 {
-    using NUnit.Framework;
-    using System.Linq;    
+       
 
     [TestFixture]
     public class Test

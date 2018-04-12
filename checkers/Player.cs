@@ -4,7 +4,20 @@ using System.Text;
 
 namespace checkers
 {
-    class Player
+    public interface IPlayer
     {
+        string Name { get; }
+        (int, int) GetMove();
+    }
+
+
+    class Player : IPlayer
+    {
+        public string Name => throw new NotImplementedException();
+
+        public (int, int) GetMove()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

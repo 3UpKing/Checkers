@@ -4,7 +4,30 @@ using System.Text;
 
 namespace checkers
 {
-    class Referee
+
+    public interface IReferee
     {
+        IPlayer Winner();
+        bool IsDraw();
+        void Play();
+    }
+    public class IllegalMoveException : ApplicationException { }
+
+    class Referee : IReferee
+    {
+        public bool IsDraw()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Play()
+        {
+            throw new NotImplementedException();
+        }
+
+        public IPlayer Winner()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
