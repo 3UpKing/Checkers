@@ -14,7 +14,7 @@ namespace checkers
         void Move(int destination);
     }
 
-    class Piece : IPiece
+    public class Piece : IPiece
     {
         public Piece(Color c, int pos)
         {
